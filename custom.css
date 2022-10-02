@@ -1,0 +1,150 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  color: #5a5a5a;
+}
+
+.text-primary{
+  color: #21c1e0 !important;
+}
+
+/* the slides */
+.slick-slide {
+  margin: 0 18px;
+}
+
+/* the parent */
+/* .slick-list {
+  margin: 0 -18px;
+} */
+
+.heroImage{
+  background-image: url(./assets/indian-small-kids-playing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+#topCarousel .carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#topCarousel .carousel-caption {
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+#topCarousel .carousel-caption h1, .mainTitle h1 {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
+  color: #4c4c4c;
+  font-size: 41px;
+}
+#topCarousel .carousel-caption span, .mainTitle h1 span {
+  font-weight: 800;
+  color: #21c1e0;
+  font-size: 53px;
+  display: block;
+}
+
+.stateDetails .titleMain {
+  font-size: 34px;
+  font-weight: 700;
+}
+.stateDetails .titleMain span {
+  color: #21c1e0;
+}
+
+.stateDetails .card-text {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.titleText {
+  color: #21c1e0;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.mediaCard .card {
+  height: 110px;
+  justify-content: center;
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* rtl:end:remove */
+
+.feature-list .card-title {
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .carousel-item { height: 100%; min-height: 350px; background-position: right; }
+  .mainTitle h1 { font-size: 26px;}
+  .mainTitle h1 span { font-size: 38px;}
+
+ }
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  /* .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  } */
+}
+
+/* @media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+} */
