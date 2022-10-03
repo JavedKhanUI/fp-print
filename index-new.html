@@ -340,7 +340,7 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6">
                     <!--  -->
-                    <div class="row row-cols-1 row-cols-md-3 g-2 text-center feature-list">
+                    <div class="row row-cols-2 row-cols-md-3 g-2 text-center feature-list">
                         <div class="col">
                           <div class="card h-100">
                             <div class="img-of">
@@ -463,6 +463,56 @@
              </div>
         </div>
     </section>
+
+    <!--  -->
+        <!--  -->
+        <section class="py-5">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12 text-center titleMain mb-3">
+                      <p class="titleText"><span>We are the </span> partner of choice for:</p>
+                  </div>
+              </div>
+              <div class="justify-content-center align-items-center text-center partnerCard">
+                <!--  -->
+                <div class="card card-body">
+                    <img src="./assets/gallery/partner/abp.jpg" alt="" class="img-fluid">
+                </div>
+                <!--  -->
+                <div class="card card-body">
+                  <img src="./assets/gallery/partner/airtel.jpg" alt="" class="img-fluid">
+                </div>
+                <!--  -->
+                <div class="card card-body">
+                  <img src="./assets/gallery/partner/capgemini.jpg" alt="" class="img-fluid">
+                </div>
+                  <!--  -->
+                  <div class="card card-body">
+                      <img src="./assets/gallery/partner/tcs.jpg" alt="" class="img-fluid">
+                  </div>
+                  <!--  -->
+                    <!--  -->
+                <div class="card card-body">
+                  <img src="./assets/gallery/partner/wipro.jpg" alt="" class="img-fluid">
+                  </div>
+                  <!--  -->
+                  <div class="card card-body">
+                      <img src="./assets/gallery/partner/tata.jpg" alt="" class="img-fluid">
+                  </div>
+                  <!--  -->
+                  <div class="card card-body">
+                        <img src="./assets/gallery/partner/Hcl.jpg" alt="" class="img-fluid">
+                    </div>
+                    <!--  -->
+                    <div class="card card-body">
+                      <img src="./assets/gallery/partner/icici.jpg" alt="" class="img-fluid">
+                    </div>
+                  <!--  -->
+              </div>
+          </div>
+      </section>
+      <!--  -->
+
     <!--  -->
     <section class="awardView py-lg-5 py-4">
         <div class="container">
@@ -472,17 +522,17 @@
                 </div>
             </div>
 
-            <div class="row row-cols-2">
-                <div class="col">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
                     <div class="ratio">
-                        <video id="player" class="js-player" playsinline controls poster="assets/video-2.jpg">
+                        <video id="player" class="js-player" playsinline poster="assets/video-2.jpg">
                             <source src="assets/Raj-Singhal-min.mp4" type="video/mp4" />
                         </video>
                       </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-6 mb-4">
                     <div class="ratio">
-                        <video id="player" class="js-player" playsinline controls poster="assets/video-1.jpg">
+                        <video id="player" class="js-player" playsinline poster="assets/video-1.jpg">
                             <source src="assets/Purvesh-Sharma.mp4" type="video/mp4" />
                         </video>
                     </div>
@@ -493,27 +543,27 @@
 
             <div class="row row-cols-2 row-cols-md-5 g-4 justify-content-center align-items-center text-center mediaCard">
                 <div class="col">
-                    <div class="card card-body border-0 shadow-sm">
+                    <div class="card card-body shadow-sm">
                         <img src="assets/times-of-india.png" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card card-body border-0 shadow-sm">
+                    <div class="card card-body shadow-sm">
                         <img src="assets/Pioneer.png" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card card-body border-0 shadow-sm">
+                    <div class="card card-body shadow-sm">
                         <img src="assets/the-economic-times.png" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card card-body border-0 shadow-sm">
+                    <div class="card card-body shadow-sm">
                         <img src="assets/the-indian-express.png" alt=""  class="img-fluid">
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card card-body border-0 shadow-sm">
+                    <div class="card card-body shadow-sm">
                             <img src="assets/momspresso.png" alt="" class="img-fluid">
                     </div>
                 </div>
@@ -587,5 +637,50 @@ $('.sliderNew').slick({
 });
 			
 </script>
+<!--  -->
+
+<script>
+  $('.partnerCard').slick({
+    dots: true,
+    infinite: true,
+    prevArrow: false,
+    nextArrow: false,
+    speed: 300,
+    slidesToShow: 6,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+        
+  </script>
+
   </body>
 </html>
