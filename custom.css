@@ -123,6 +123,11 @@ body {
   font-weight: 600;
 }
 
+.infoM {
+  font-size: 25px;
+  text-align: justify;
+  font-weight: 500;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
